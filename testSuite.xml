@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite" thread-count="2" preserve-order="true">
+	<test name="FaceBokTest">
+		<parameter name="browser" value="chrome" />
+		<parameter name="url" value="https://www.facebook.com/" />
+		<classes>
+		<class name="testCase.VerifyFaceBookLogin"></class>
+		</classes>
+	</test>
+
+	<test name="WalletHubTest">
+		<parameter name="browser" value="chrome" />
+		<parameter name="url" value="https://wallethub.com/join/login" />
+		<classes>
+			<class name="testCase.VerifyWalletHubReview"></class>
+		</classes>
+	</test>
+</suite>
